@@ -5,18 +5,12 @@
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
 const deployedContracts = {
-  31337: {
+  534351: {
     SupplyTransperencyToken: {
-      address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      address: "0x4eaB29997D332A666c3C366217Ab177cF9A7C436",
       abi: [
         {
-          inputs: [
-            {
-              internalType: "address[]",
-              name: "_signers",
-              type: "address[]",
-            },
-          ],
+          inputs: [],
           stateMutability: "nonpayable",
           type: "constructor",
         },
@@ -220,6 +214,19 @@ const deployedContracts = {
               internalType: "bool",
               name: "",
               type: "bool",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getAllSigners",
+          outputs: [
+            {
+              internalType: "address[]",
+              name: "",
+              type: "address[]",
             },
           ],
           stateMutability: "view",
@@ -472,6 +479,19 @@ const deployedContracts = {
         {
           inputs: [
             {
+              internalType: "address",
+              name: "signer",
+              type: "address",
+            },
+          ],
+          name: "setSingleSigner",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
               internalType: "uint256",
               name: "",
               type: "uint256",
@@ -577,180 +597,42 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        approve: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        balanceOf: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        getApproved: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        isApprovedForAll: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        approve:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        balanceOf:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        getApproved:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        isApprovedForAll:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         name: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        ownerOf: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        safeTransferFrom: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        setApprovalForAll: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        supportsInterface: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        symbol: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        tokenURI: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        transferFrom: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        ownerOf:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        safeTransferFrom:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        setApprovalForAll:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        supportsInterface:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        symbol:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        tokenURI:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        transferFrom:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         burn: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         owner: "@openzeppelin/contracts/access/Ownable.sol",
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
     },
-    YourContract: {
-      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      abi: [
-        {
-          inputs: [
-            {
-              internalType: "address",
-              name: "_owner",
-              type: "address",
-            },
-          ],
-          stateMutability: "nonpayable",
-          type: "constructor",
-        },
-        {
-          anonymous: false,
-          inputs: [
-            {
-              indexed: true,
-              internalType: "address",
-              name: "greetingSetter",
-              type: "address",
-            },
-            {
-              indexed: false,
-              internalType: "string",
-              name: "newGreeting",
-              type: "string",
-            },
-            {
-              indexed: false,
-              internalType: "bool",
-              name: "premium",
-              type: "bool",
-            },
-            {
-              indexed: false,
-              internalType: "uint256",
-              name: "value",
-              type: "uint256",
-            },
-          ],
-          name: "GreetingChange",
-          type: "event",
-        },
-        {
-          inputs: [],
-          name: "greeting",
-          outputs: [
-            {
-              internalType: "string",
-              name: "",
-              type: "string",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [],
-          name: "owner",
-          outputs: [
-            {
-              internalType: "address",
-              name: "",
-              type: "address",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [],
-          name: "premium",
-          outputs: [
-            {
-              internalType: "bool",
-              name: "",
-              type: "bool",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [
-            {
-              internalType: "string",
-              name: "_newGreeting",
-              type: "string",
-            },
-          ],
-          name: "setGreeting",
-          outputs: [],
-          stateMutability: "payable",
-          type: "function",
-        },
-        {
-          inputs: [],
-          name: "totalCounter",
-          outputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [
-            {
-              internalType: "address",
-              name: "",
-              type: "address",
-            },
-          ],
-          name: "userGreetingCounter",
-          outputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [],
-          name: "withdraw",
-          outputs: [],
-          stateMutability: "nonpayable",
-          type: "function",
-        },
-        {
-          stateMutability: "payable",
-          type: "receive",
-        },
-      ],
-      inheritedFunctions: {},
-    },
   },
   11155111: {
     SupplyTransperencyToken: {
-      address: "0x053c3bf65a4012a7875dc67B039d50865Bb9A2ed",
+      address: "0xF5D1655A2a8E9ABB45504469155C0B3C545031bB",
       abi: [
         {
-          inputs: [
-            {
-              internalType: "address[]",
-              name: "_signers",
-              type: "address[]",
-            },
-          ],
+          inputs: [],
           stateMutability: "nonpayable",
           type: "constructor",
         },
@@ -954,6 +836,19 @@ const deployedContracts = {
               internalType: "bool",
               name: "",
               type: "bool",
+            },
+          ],
+          stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [],
+          name: "getAllSigners",
+          outputs: [
+            {
+              internalType: "address[]",
+              name: "",
+              type: "address[]",
             },
           ],
           stateMutability: "view",
@@ -1206,6 +1101,19 @@ const deployedContracts = {
         {
           inputs: [
             {
+              internalType: "address",
+              name: "signer",
+              type: "address",
+            },
+          ],
+          name: "setSingleSigner",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
               internalType: "uint256",
               name: "",
               type: "uint256",
@@ -1311,18 +1219,29 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {
-        approve: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        balanceOf: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        getApproved: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        isApprovedForAll: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        approve:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        balanceOf:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        getApproved:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        isApprovedForAll:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         name: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        ownerOf: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        safeTransferFrom: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        setApprovalForAll: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        supportsInterface: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        symbol: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        tokenURI: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
-        transferFrom: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        ownerOf:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        safeTransferFrom:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        setApprovalForAll:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        supportsInterface:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        symbol:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        tokenURI:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        transferFrom:
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         burn: "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol",
         owner: "@openzeppelin/contracts/access/Ownable.sol",
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",

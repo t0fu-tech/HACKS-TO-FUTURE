@@ -18,7 +18,6 @@ const deploySupplyTransperencyToken: DeployFunction = async function (hre: Hardh
   await deploy("SupplyTransperencyToken", {
     from: deployer,
     // Adjust constructor arguments as needed. If signer addresses are dynamic, they need to be set accordingly.
-    args: [signerAddresses],
     log: true,
     autoMine: true,
   });
