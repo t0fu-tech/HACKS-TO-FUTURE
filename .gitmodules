@@ -1,3 +1,9 @@
 [submodule "deployApi"]
 	path = deployApi
 	url = https://github.com/otaviootavio/deployApi
+[submodule "compilaApi"]
+	path = compilaApi
+	url = https://github.com/otaviootavio/compilaApi
+[submodule "de-registry-front-test"]
+	path = de-registry-front-test
+	url = https://github.com/gustavokuhl/de-registry-front-test
