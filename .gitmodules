@@ -1,0 +1,3 @@
+[submodule "deployApi"]
+	path = deployApi
+	url = https://github.com/otaviootavio/deployApi
