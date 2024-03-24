@@ -7,3 +7,6 @@
 [submodule "de-registry-front-test"]
 	path = de-registry-front-test
 	url = https://github.com/gustavokuhl/de-registry-front-test
+[submodule "getContractDataAPI"]
+	path = getContractDataAPI
+	url = https://github.com/otaviootavio/getContractDataAPI
